@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className="text-4xl text-blue-500">
+        <h1 className="text-4xl text-dark">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
