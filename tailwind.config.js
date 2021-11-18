@@ -26,6 +26,66 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+
+      primary: {
+        100: '#ff8a00',
+        80: '#ffa133',
+        60: '#ffb966',
+        40: '#ffd099',
+        20: '#ffe8cc'
+      },
+      green: {
+        100: '#27c686',
+        80: '#52d19e',
+        60: '#7dddb6',
+        40: '#a9e8cf',
+        20: '#d4f4e7'
+      },
+      blue: {
+        100: '#309dd1',
+        80: '#59b1da',
+        60: '#83c4e3',
+        40: '#acd8ed',
+        20: '#d6ebf6'
+      },
+      red: {
+        100: '#ff5f3d',
+        80: '#ff7f64',
+        60: '#ff9f8b',
+        40: '#ffbfb1',
+        20: '#ffdfd8'
+      },
+      grey: {
+        100: '#393e46',
+        80: '#61656b',
+        60: '#888b90',
+        40: '#b0b2b5',
+        20: '#d7d8da'
+      },
+      lightGrey: {
+        100: '#e4e4e4',
+        80: '#e9e9e9',
+        60: '#efefef'
+      },
+      lighterGrey: {
+        100: '#f2f2f2',
+        60: '#f7f7f7',
+        40: '#fafafa'
+      },
+      white: {
+        100: '#fff',
+        80: 'rgba(255, 255, 255, 0.8)',
+        60: 'rgba(255, 255, 255, 0.6)',
+        20: 'rgba(255, 255, 255, 0.2)'
+      },
+      black: {
+        60: 'rgba(0, 0, 0, 0.6)',
+        40: 'rgba(0, 0, 0, 0.4)',
+        20: 'rgba(0, 0, 0, 0.2)'
+      },
+      'dark': '#222831'
+
+
     },
     spacing: {
       px: '1px',
