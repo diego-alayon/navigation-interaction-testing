@@ -7,7 +7,8 @@ export default function Home() {
   return (
     <>
       <Sidebar />
-      <Button error size="medium" label="hola" icon={<UilPlusCircle />} />
+      <Button error size="medium" label="Button" icon={<UilPlusCircle />} />
     </>
   )
 }
+
