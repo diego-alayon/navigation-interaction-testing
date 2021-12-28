@@ -1,18 +1,13 @@
-import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
+import Sidebar from '../components/Sidebar';
+import Button from '../components/Button'
+import { UilPlusCircle } from '@iconscout/react-unicons'
 
 export default function Home() {
   return (
     <>
-<ProSidebar>
-  <Menu iconShape="square">
-    <MenuItem>Dashboard</MenuItem>
-    <SubMenu title="Components">
-      <MenuItem>Component 1</MenuItem>
-      <MenuItem>Component 2</MenuItem>
-    </SubMenu>
-  </Menu>
-</ProSidebar>;
+      <Sidebar />
+      <Button error size="medium" label="hola" icon={<UilPlusCircle />} />
     </>
   )
 }
