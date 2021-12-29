@@ -3,11 +3,11 @@ import  Button  from '../components/Button'
 
 
 export default {
-    title: 'LAN-Button',
+    title: 'Lansweeper/Button',
     component: Button,
-    argTypes: {
-      backgroundColor: { control: 'color' },
-    },
+    // argTypes: {
+    //   backgroundColor: { control: 'color' },
+    // },
   };
 
   const Template = (args) => <Button {...args} />;
@@ -15,6 +15,7 @@ export default {
   export const Primary = Template.bind({});
   Primary.args = {
     label: 'Button',
+    type: 'primary'
   };
 
 export const Large = Template.bind({});

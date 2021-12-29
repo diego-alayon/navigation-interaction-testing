@@ -1,20 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import { UilPlusCircle } from '@iconscout/react-unicons'
+import { Add } from '../assets/Icons/add'
+// import { UilPlus } from '@iconscout/react-unicons'
 
 const Button = ({label, icon, type, size }) => {
 
-    const iconButton = icon ? <UilPlusCircle /> : null;
+    // const iconButton = icon ? <UilPlus size="16" /> : null;
+    const iconButton = icon ? <Add /> : null;
     // const Secondary = secondary ? 'button-secondary' : null;
     // const Error = error ? 'button-error' : null;
     // const Success = success ? 'button-success' : null;
 
     return (
         <>
-          <button className={[`button-${type}`, `button-${size}`].join(' ')}>
+          <button className={[`button`, `button-${type}`, `button-${size}`].join(' ')}>
             {iconButton}
-            {label}
-          </button>  
+            <label>{label}</label>
+          </button>
         </>
     )
 }
