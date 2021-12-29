@@ -12,8 +12,11 @@ module.exports = {
           padding: theme('spacing.2'),
           borderRadius: theme('borderRadius.sm'),
           'label': {
-            marginLeft: theme('spacing.2'),
             cursor: theme('cursor.pointer'),
+            fontFamily: theme('fontFamily.QuicksandMedium'),
+          },
+          'svg': {
+            marginRight: theme('spacing.2'),
           }
         },
         '.button-small': {
@@ -39,7 +42,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'Quicksand': 'Quicksand-Regular'
+        'Quicksand': 'Quicksand-Regular',
+        'QuicksandMedium': 'Quicksand-Medium',
+        'QuicksandBold': 'Quicksand-Bold'
       }
     },
     screens: {
