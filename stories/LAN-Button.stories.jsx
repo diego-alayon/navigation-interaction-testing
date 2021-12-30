@@ -23,3 +23,13 @@ export const Large = Template.bind({});
     size: 'large',
     label: 'Button',
     };
+
+  
+    Primary.parameters = {
+      enabled: true,
+      a11y: {
+        config: {
+          rules: [{ id: 'color-contrast', enabled: true }],
+        },
+      },
+    };
