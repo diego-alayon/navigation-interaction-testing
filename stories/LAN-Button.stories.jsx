@@ -25,11 +25,15 @@ export const Large = Template.bind({});
     };
 
   
-    Primary.parameters = {
-      enabled: true,
-      a11y: {
-        config: {
-          rules: [{ id: 'color-contrast', enabled: true }],
-        },
-      },
-    };
+    // Primary.parameters = {
+    //   enabled: true,
+    //   a11y: {
+    //     config: {
+    //       rules: [
+    //         { 
+    //           id: 'color-contrast', 
+    //           enabled: true }
+    //       ],
+    //     },
+    //   },
+    // };

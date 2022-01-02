@@ -15,8 +15,14 @@ const Sidebar = ({collapsed}) => {
                 <MenuItem icon={<UilAngleDoubleLeft onClick={() => setToggle(!toggle)} />}>Lansweeper</MenuItem>
                 {console.log('Sites',Sites)}
                 <MenuItem>Boards</MenuItem>
-                    <SubMenu title="Sites">
+                    <SubMenu title="Second level">
                         {Sites?.map(Sites => <MenuItem>{Sites}</MenuItem>)}
+                        <SubMenu title="third level">
+                            {Sites?.map(Sites => <MenuItem>{Sites}</MenuItem>)}
+                            <SubMenu title="Fourth level">
+                                {Sites?.map(Sites => <MenuItem>{Sites}</MenuItem>)}
+                            </SubMenu>
+                        </SubMenu>
                     </SubMenu>
             </Menu>
             </ProSidebar>
