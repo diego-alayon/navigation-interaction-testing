@@ -1,13 +1,50 @@
 const colors = require('tailwindcss/colors')
+const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   purge: [],
   presets: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
+  plugins:[
+    plugin(function ({ addComponents, addBase, addUtilities, theme}){
+      addComponents({
+        'button': {
+          padding: theme('spacing.2'),
+          borderRadius: theme('borderRadius.sm'),
+          'label': {
+            cursor: theme('cursor.pointer'),
+            fontFamily: theme('fontFamily.QuicksandMedium'),
+          },
+          'svg': {
+            marginRight: theme('spacing.2'),
+          }
+        },
+        '.button-small': {
+          fontSize: theme('fontSize.sm')
+        },
+        '.button-primary': {
+          backgroundColor: theme('colors.grey.100'),
+          color: theme('colors.white.100'),
+          borderWidth: theme('borderWidth.DEFAULT'),
+          borderColor: theme('borderColor.dark.100'),
+          fill: theme('colors.white.100')
+        }
+
+      })
+      addUtilities({
+        '.button': {
+          display: 'inline-flex',
+          alignItems: 'center'
+        }
+      })
+    })
+  ], // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
-        'Quicksand': 'Quicksand-Regular'
+        'Quicksand': 'Quicksand-Regular',
+        'QuicksandMedium': 'Quicksand-Medium',
+        'QuicksandBold': 'Quicksand-Bold'
       }
     },
     screens: {
@@ -88,7 +125,9 @@ module.exports = {
         40: 'rgba(0, 0, 0, 0.4)',
         20: 'rgba(0, 0, 0, 0.2)'
       },
-      'dark': '#222831'
+      dark: {
+        100: '#222831'
+      }
 
 
     },
@@ -1032,5 +1071,5 @@ module.exports = {
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
   },
-  plugins: [],
+
 }
