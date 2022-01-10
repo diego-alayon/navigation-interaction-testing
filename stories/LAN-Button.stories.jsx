@@ -24,16 +24,13 @@ export const Large = Template.bind({});
     label: 'Button',
     };
 
-  
-    // Primary.parameters = {
-    //   enabled: true,
-    //   a11y: {
-    //     config: {
-    //       rules: [
-    //         { 
-    //           id: 'color-contrast', 
-    //           enabled: true }
-    //       ],
-    //     },
-    //   },
-    // };
+    export const Inaccessible = () => (
+      <button style={{ backgroundColor: 'red', color: 'darkRed' }}>Inaccessible button</button>
+    );
+    Inaccessible.parameters = {
+      a11y: {
+        config: {
+          rules: [{ id: 'color-contrast', enabled: false }],
+        },
+      },
+    };
