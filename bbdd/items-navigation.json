@@ -1,0 +1,143 @@
+[
+    {
+        "id": "Boards",
+        "boards": [
+            "Overview",
+            "Create new board"
+        ]
+    },
+
+    {
+        "id": "Scaning",
+        "scaning": [
+            "All scan servers",
+            "Mapping",
+            "Asser radar",
+            "Exclusions"
+        ],
+        "targets": [
+            "All targets",
+            "CuartoGapac",
+            "GapacDouble",
+            "FirstGapac",
+            "SixthGapac",
+            "Duplicates",
+            "Add scaning target"
+        ],
+        "credential vault": [
+            "Default credentials",
+            "My credentials",
+            "cuartogapac",
+            "gapacdoble2",
+            "primera-gapac",
+            "sixthgapac6",
+            "tripleduplicate"
+        ],
+        "Scan issues": [
+            "All scan issues",
+            "All scan issues",
+            "SSH error",
+            "Enable SNMP",
+            "RPC unavailable",
+            "Ping failed",
+            "Access denied",
+            "VMware error",
+            "Cannot resolve IP address",
+            "Error",
+            "Scan incomplete",
+            "Cannot connect to SSH server.",
+            "No valid credentials found"
+        ]
+    },
+
+    {
+        "id": "Inventory",
+        "inventory": [
+            "All assets",
+            "Domains & Workgroups",
+            "Installations",
+            "IP Locations",
+            "Asset Radar",
+            "Duplicate conflicts",
+            "Add new asset"
+        ],
+        "AssetsGroups": [
+            "Default group",
+            "Default group",
+            "MyStaticTest",
+            "MyStaticTest",
+            "MyStaticTest",
+            "MyStaticTest",
+            "nombre-del-grupo-grande",
+            "TestADPPa",
+            "TestADS",
+            "TestADS",
+            "TestADS",
+            "TestADS"
+        ],
+        "Assets states": [
+            "Active",
+            "Broken",
+            "Don't show",
+            "In repair",
+            "lol",
+            "Non-active",
+            "Sold",
+            "Spare",
+            "Stock",
+            "Stolen",
+            "Add new asset",
+            "Manage asset states"
+        ],
+        "Assets types": [
+            "APC",
+            "Apple Mac",
+            "AWS EC2 VPC",
+            "Bridge",
+            "Camera",
+            "Citrix XenServer",
+            "Computer",
+            "Device server",
+            "Environment Monitor",
+            "ESXi server",
+            "Firewall",
+            "FTP server",
+            "Game device",
+            "iOS",
+            "Laptop",
+            "Linux",
+            "Location",
+            "Mail server",
+            "Mobile",
+            "Monitor",
+            "NAS",
+            "Network device",
+            "PLC",
+            "PLC",
+            "PLC",
+            "PLC",
+            "PLC",
+            "Power distribution unit",
+            "Printer",
+            "Remote Access Controller",
+            "Router",
+            "SAN",
+            "Smart Home",
+            "Smart TV",
+            "Switch",
+            "Tablet",
+            "Unix",
+            "Unknown",
+            "UPS",
+            "Video device",
+            "VMware vCenter server",
+            "VOIP Gateway",
+            "VOIP phone",
+            "Webserver",
+            "Windows",
+            "Windows CE",
+            "Wireless Access point",
+            "Wireless controller"
+        ]
+    }
+]

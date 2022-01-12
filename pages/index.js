@@ -1,25 +1,33 @@
+import React, { useState } from 'react'
 import 'react-pro-sidebar/dist/css/styles.css'
-import Sidebar from '../components/Sidebar'
-// import Accordion from '../components/accordion'
-// import Button from '../components/Button'
-// import { Add } from '../assets/Icons/add'
-// import { UilPlusCircle } from '@iconscout/react-unicons'
+import NavigationSystem from '../components/NavigationSystem'
 
 export default function Home() {
+
+  const [collapseMenu, setCollapseMenu] = useState(false)
+
   return (
     <>
-      <Sidebar />
+      {/* <Sidebar /> */}
       {/* <Button type="primary" label="Button" icon={<Add fill="white-100"/>} /> */}
-      {/* <Accordion title="What is your return policy?">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </Accordion>
-      <Accordion title="What is your return policy?">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. <br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </Accordion> */}
+      <div className='w-full h-full flex'>
+        <div className='w-12'>
+          <div onClick={() => setCollapseMenu(!collapseMenu)}>collapse me!</div>
+          <div>hola</div>
+        </div>
+
+        <div className='w-full'>
+            <div className='grid grid-cols-12'>{collapseMenu && <div className="col-span-3"><NavigationSystem /></div>}
+              <div className={collapseMenu ? '' : 'col-span-12' }>
+                Content
+              </div>
+            </div>
+        </div>
+      </div>
+
+      
+
+
     </>
   )
 }
