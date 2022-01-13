@@ -1,3 +1,4 @@
+// Sites nodes and subnodes
 export const Sites = [
     'Site-1',
     'Site-2',
@@ -10,11 +11,15 @@ export const Sites = [
     'Site-9',
     'Site-10',
 ]
+//
+
+// Boards nodes and subnodes
 export const Boards = [
     'Overview',
     'Create new board',
     'Components'
 ]
+// Scaning nodes and subnodes
 export const Scaning = [
     'All scan servers',
     'targets',
@@ -24,6 +29,9 @@ export const Scaning = [
     'Exclusions',
     'Scan issues'
 ]
+//
+
+// Inventory nodes and subnodes
 export const Inventory = [
     'All assets',
     'Assets groups',
@@ -36,9 +44,15 @@ export const Inventory = [
     'Duplicate conflicts',
     'Add new asset'
 ]
+//
+
+// Software nodes and subnodes
 export const Software = [
     'Software'
 ]
+//
+
+// Reports nodes and subnodes
 export const Reports = [
     'All reports',
     'Hardware',
@@ -48,6 +62,9 @@ export const Reports = [
     'Custom reports',
     'Create new report'
 ]
+//
+
+// Configuration nodes and subnodes
 export const Configuration = [
     'Branding',
     'Installations',
@@ -56,5 +73,8 @@ export const Configuration = [
     'Aplications',
     'Server settings'
 ]
+//
+
+
 export const WhatsNew = []
 export const Notifications = []
