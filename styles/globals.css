@@ -49,6 +49,10 @@ a {
 * {
   box-sizing: border-box;
 }
+.center__icons {
+  display: block;
+  margin: 0 auto;
+}
 
 /* Trash */
 /* Style the accordion section */
@@ -114,13 +118,6 @@ a {
 
 
 
-
-/* .mainMenu{
-  width: 250px;
-  display: block;
-  border-radius: 10px;
-  overflow: hidden;
-} */
 .item{
   overflow: hidden;
 }
