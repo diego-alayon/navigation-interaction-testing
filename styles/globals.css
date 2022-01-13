@@ -29,11 +29,16 @@
   }
 }
 
-html,
+html{
+  height: 100%;
+}
 body {
   padding: 0;
   margin: 0;
-  /* font-family: 'Quicksand-Regular'; */
+  height: 100%;
+}
+#__next{
+  height: 100%;
 }
 
 a {
@@ -43,6 +48,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.center__icons {
+  display: block;
+  margin: 0 auto;
 }
 
 /* Trash */
@@ -54,14 +63,9 @@ a {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #eee;
-  color: #444;
   cursor: pointer;
-  padding: 18px;
   display: flex;
   align-items: center;
-  border: none;
-  outline: none;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -73,14 +77,13 @@ a {
 
 /* Style the accordion content title */
 .accordion__title {
-  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
 }
 
 /* Style the accordion chevron icon */
 .accordion__icon {
-  margin-left: auto;
+  /* margin-left: auto; */
   transition: transform 0.3s ease-in-out;
 }
 
@@ -98,9 +101,65 @@ a {
 
 /* Style the accordion content text */
 .accordion__text {
-  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  padding: 18px;
+}
+
+/* Collapsible */
+.collapsible .content {
+   height: 0px;
+   overflow: hidden;
+   transition: height ease 0.3s;
+}
+.collapsible .content.show {
+  height: 200px;
+}
+
+
+
+
+.item{
+  overflow: hidden;
+}
+.btn{
+  display: block;
+  position: relative;
+
+}
+.btn i {
+  margin-right: 10px;
+}
+.subMenu{
+  overflow: hidden;
+  transition: max-height 0.7s;
+  max-height: 0;
+}
+.subMenu a{
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 14px;
+  border-bottom: 1px solid #394c7f;
+  position: relative;
+  
+}
+.subMenu a:before{
+  content: '';
+  opacity: 0;
+  transition: opacity 0.3s;
+
+}
+
+.subMenu a:after{
+  content: '';
+  opacity: 0;
+  transition: opacity 0.3s;
+
+}
+.subMenu a:last-child{
+  border:none;
+}
+.item:target .subMenu{
+  max-height: 20em;
 }
 

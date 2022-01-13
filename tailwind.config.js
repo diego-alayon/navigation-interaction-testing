@@ -28,7 +28,31 @@ module.exports = {
           borderWidth: theme('borderWidth.DEFAULT'),
           borderColor: theme('borderColor.dark.100'),
           fill: theme('colors.white.100')
+        },
+        '.header': {
+          display: ('grid'),
+          height: theme('spacing.14'),
+          borderBottomWidth: theme('spacing.px'),
+          borderColor: theme('colors.grey.20'),
+          alignContent: ('center'),
+          marginBottom: theme('spacing.4'),
+          backgroundColor: theme('colors.white.100')
+        },
+        '.collapse': {
+          borderRightWidth: theme('spacing.px'),
+          borderColor: theme('colors.grey.40')
+        },
+        '.navigationSystem': {
+          borderRightWidth: theme('spacing.px'),
+          borderColor: theme('colors.grey.20'),
+          height: theme('height.full')
+        },
+        '.boxIcon': {
+          backgroundColor: theme('colors.grey.20'),
+          borderRadius: theme('spacing.1'),
+          cursor: theme('cursor.pointer')
         }
+
 
       })
       addUtilities({

@@ -9,13 +9,16 @@ const Accordion = ({ title, children }) => {
   const [height, setHeight] = useState("0px");
   const [rotation, setRotation] = useState("accordion__icon");
 
+
+  // const contentChildren = useRef();
   const content = useRef();
   const sensitive = useRef();
 
   const toggleAccordion = () => {
     setActive(active === "" ? "active" : "");
     setHeight(
-      active === "active" ? "0px" : `${content.current.scrollHeight}px`
+      active === "active" ? "0px" : `${content.current.scrollHeight}px`,
+      // contentChildren === "active" ? "0px" : `${contentChildren.current.scrollHeight}px`
     );
     setRotation(
       active === "active" ? "accordion__icon" : "accordion__icon rotate"
@@ -31,15 +34,16 @@ const Accordion = ({ title, children }) => {
   return (
     <div className="accordion__section" ref={sensitive}>
       <button className={`accordion ${active}`} onClick={toggleAccordion}>
-        <p className="accordion__title">{title}</p>
-        <Chevron width={10} fill={"#777"} className={`${rotation}`} />
+        <Chevron width={6} fill={"#777"} className={`${rotation}`} />
+        <div className="accordion__title">{title}</div>
       </button>
       <div
         ref={content}
         style={{ maxHeight: `${height}` }}
-        className="accordion__content"
-      >
-        <div className="accordion__text">{children}</div>
+        className="accordion__content">
+        <div className="accordion__text" style={{ maxHeight: `${height}` }}>
+        {children}
+        </div>
       </div>
     </div>
   );
