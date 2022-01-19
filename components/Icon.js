@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import constantsIcons from "../assets/Icons/constantsIcons";
+import iconPath from "../assets/Icons/iconPath";
 
 const defaultStyles = { display: "inline-block", verticalAlign: "middle" };
 
@@ -16,7 +16,7 @@ const Icon = ({ size, color, icon, className, style, viewBox }) => {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
-      <path fill={color} d={constantsIcons[icon]} />
+      <path fill={color} d={iconPath[icon]} />
     </svg>
   );
 };
@@ -24,7 +24,8 @@ const Icon = ({ size, color, icon, className, style, viewBox }) => {
 Icon.defaultProps = {
   size: 16,
   color: "#000000",
-  viewBox: "0 0 24 24",
+  icon: '',
+  viewBox: "0 0 16 16",
   style: {},
   className: "",
 };
@@ -34,7 +35,7 @@ Icon.propTypes = {
   color: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
   viewBox: PropTypes.string.isRequired,
-  style: PropTypes.shape(PropTypes.object),
+//   style: PropTypes.shape(PropTypes.object),
   className: PropTypes.string,
 };
 

@@ -35,7 +35,7 @@ module.exports = {
           borderBottomWidth: theme('spacing.px'),
           borderColor: theme('colors.grey.20'),
           alignContent: ('center'),
-          marginBottom: theme('spacing.4'),
+          // marginBottom: theme('spacing.4'),
           backgroundColor: theme('colors.white.100')
         },
         '.collapse': {
@@ -48,9 +48,11 @@ module.exports = {
           height: theme('height.full')
         },
         '.boxIcon': {
-          backgroundColor: theme('colors.grey.20'),
+          backgroundColor: theme('colors.lighterGrey.60'),
           borderRadius: theme('spacing.1'),
-          cursor: theme('cursor.pointer')
+          cursor: theme('cursor.pointer'),
+          borderColor: theme('colors.grey.20'),
+          borderWidth: theme('spacing.px')
         }
 
 
